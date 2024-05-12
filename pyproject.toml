@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pycloud-app"
+version = "0.1.0"
+description = ""
+authors = ["raoufsenou <raoufsenou@gmail.com>"]
+readme = "README.md"
+
+[tool.ruff]
+# Same as Black.
+line-length = 88
+indent-width = 2
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cryptography = "^42.0.5"
+uvicorn = "^0.29.0"
+python-multipart = "^0.0.9"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = "^1.7.4"
+python-dotenv = "^1.0.1"
+starlette = "^0.37.2"
+bcrypt = "^4.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
